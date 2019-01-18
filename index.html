@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -34,19 +35,19 @@
                   <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
                 </svg>
               </a><br>
-              <a href="#" class="menu__link">
+              <a href="#services" class="menu__link">
                 Service
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
                   <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
                 </svg>
               </a><br>
-              <a href="#" class="menu__link">
+              <a href="#portfolio" class="menu__link">
                 Portfolio
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
                   <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
                 </svg>
               </a>
-              <a href="#" class="menu__link">
+              <a href="#contact" class="menu__link">
                 Contact
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
                   <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
@@ -79,12 +80,214 @@
             <button type="button" name="button">Download my cv</button>
           </div>
         </div>
-        <div class="about__link">
-          <img src="img/about__img.png" alt="About-Img">
+        <div class="about__link about__link_img">
         </div>
       </div>
     </div>
-  <script src="js/main.js"></script>
+    <div id="services" class="services">
+      <div class="container services__titl">
+        <div class="line"></div>
+        <h2>services</h2>
+        <div class="services__items">
+          <div class="services__link">
+            <img src="img/services_1.png" alt="services">
+            <h4>User Research</h4>
+          </div>
+          <div class="services__link">
+            <img src="img/services_2.png" alt="services">
+            <h4>IA And Wireframes</h4>
+          </div>
+          <div class="services__link">
+            <img src="img/services_3.png" alt="services">
+            <h4>User Twsting</h4>
+          </div>
+        </div>
+        <div class="services__items">
+          <div class="services__link">
+            <img src="img/services_4.png" alt="services">
+            <h4>Looks and Feel</h4>
+            <h4>Design (UI)</h4>
+          </div>
+          <div class="services__link">
+            <img src="img/services_5.png" alt="services">
+            <h4>Delivery</h4>
+          </div>
+          <div class="services__link">
+            <img src="img/services_6.png" alt="services">
+            <h4>Integration Support</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="container services__titl">
+        <div class="line"></div>
+        <h2>my skills</h2>
+        <div class="chart">
+          <div id="curve_chart" class="curve_chart_st"></div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio" class="portfolio">
+      <div class="container services__titl">
+        <div class="line"></div>
+        <h2>Portfolio</h2>
+        <div class="portfolio__items">
+          <div class="portfolio__link"></div>
+          <div class="portfolio__link portfolio__link_2"></div>
+          <div class="portfolio__link portfolio__link_3"></div>
+        </div>
+        <div class="portfolio__items">
+          <div class="portfolio__link portfolio__link_4"></div>
+          <div class="portfolio__link portfolio__link_5"></div>
+          <div class="portfolio__link portfolio__link_3 portfolio__link_6"></div>
+        </div>
+        <div class="btn">
+          <button type="button" name="button">Load more</button>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <div class="container services__titl">
+        <div class="line"></div>
+        <h2>Testimonials</h2>
+        <div id="slider" class="slider">
+          <ol class="slider__indicators">
+            <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+            <li class="slider__indicator" data-slide-to="1"></li>
+            <li class="slider__indicator" data-slide-to="2"></li>
+            <li class="slider__indicator" data-slide-to="3"></li>
+          </ol>
+          <div class="slider__items">
+            <div class="slider__item slider__item_active">
+              <div class="slider__link">
+                <div class="slider__img">
+                  <img src="img/slider_1.png" alt="Slider-Img">
+                </div>
+                <div class="slider__content">
+                  <h4>Limara tusi</h4>
+                  <h6>CEO, Random Company</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__link">
+                <div class="slider__img">
+                  <img src="img/slider_1.png" alt="Slider-Img">
+                </div>
+                <div class="slider__content">
+                  <h4>Limara tusi</h4>
+                  <h6>CEO, Random Company</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__link">
+                <div class="slider__img">
+                  <img src="img/slider_1.png" alt="Slider-Img">
+                </div>
+                <div class="slider__content">
+                  <h4>Limara tusi</h4>
+                  <h6>CEO, Random Company</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__link">
+                <div class="slider__img">
+                  <img src="img/slider_1.png" alt="Slider-Img">
+                </div>
+                <div class="slider__content">
+                  <h4>Limara tusi</h4>
+                  <h6>CEO, Random Company</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="client">
+        <div class="container">
+          <div class="client__item">
+            <div class="client__link">
+              <div class="happy__client">
+                <img src="img/client_1.png" alt="Happy-Client">
+                <h4><span>120</span></h4>
+                <h4>Hands to work</h4>
+              </div>
+              <div class="happy__client">
+                <img src="img/client_2.png" alt="Happy-Client">
+                <h4><span>310</span></h4>
+                <h4>Happy client</h4>
+              </div>
+            </div>
+            <div class="client__link">
+              <div class="happy__client">
+                <img src="img/client_3.png" alt="Happy-Client">
+                <h4><span>510</span></h4>
+                <h4>Finished project</h4>
+              </div>
+              <div class="happy__client">
+                <img src="img/client_4.png" alt="Happy-Client">
+                <h4><span>720</span></h4>
+                <h4>Cups of cofee</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact">
+      <div class="container services__titl">
+        <div class="line line_white"></div>
+        <h2>say hello</h2>
+        <div class="post">
+          <div class="post__top">
+            <input type="text" name="name" placeholder="Name">
+            <input type="Email" name="Email" placeholder="Email">
+          </div>
+          <div class="post__bottom">
+            <textarea name="message" placeholder="Message"></textarea>
+          </div>
+          <div class="btn btn_white">
+            <button type="button" name="button">Send</button>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__link footer__link_social">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-behance"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-dribbble"></i>
+            </a>
+          </div>
+          <div class="footer__link footer__link_titl">
+            <h5>2017. All Rights Reserved</h5>
+          </div>
+          <div class="footer__link"></div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/slide.js"></script>
 
   </body>
 
