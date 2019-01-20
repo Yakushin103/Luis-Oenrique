@@ -45,3 +45,34 @@ function drawChart() {
 
         chart.draw(data, options);
       }
+
+//slider
+
+var body = document.body;
+var html = document.documentElement;
+var bodyH = Math.max(body.scrollHeight, body.offsetHeight, body.getBoundingClientRect().height, html.clientHeight, html.scrollHeight, html.offsetHeight); // The max height of the body
+var bodyScroll = bodyH - 800;
+
+$(function() {
+  // при нажатии на кнопку scrollup
+  $('.scrollup').click(function() {
+    // переместиться в верхнюю часть страницы
+    $("html, body").animate({
+      scrollTop:0
+    },1000);
+  })
+})
+
+
+// при прокрутке окна (window)
+$(window).scroll(function() {
+//   если пользователь прокрутил страницу более чем на 200px
+  if ($(this).scrollTop()>bodyScroll) {
+    // то сделать кнопку scrollup видимой
+    $('.scrollup').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.scrollup').fadeOut();
+  }
+});
