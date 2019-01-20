@@ -7142,6 +7142,9 @@ a {
   width: 100%;
   padding: 100px 0;
   background: #f6f6f6; }
+  @media screen and (max-width: 768px) {
+    .services {
+      padding: 50px 0; } }
 
 .services__titl {
   -webkit-box-direction: normal;
@@ -7199,7 +7202,14 @@ a {
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .services__link:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
 
 .services__link img {
   margin-bottom: 10px; }
@@ -7278,7 +7288,14 @@ a {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
   background: url("../img/portfolio_1.png");
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer; }
+  .portfolio__link:hover {
+    opacity: 1; }
   @media screen and (max-width: 768px) {
     .portfolio__link {
       width: 48%; } }
@@ -7332,9 +7349,13 @@ a {
 .slider__img {
   margin-right: 10px; }
 
+.slider__items {
+  border: 1px solid #4d4d4d;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
+
 .slider__link {
   width: calc(99% - 160px);
-  border: 1px solid #4d4d4d;
   padding: 80px; }
   @media screen and (max-width: 992px) {
     .slider__link {
@@ -7709,6 +7730,8 @@ a {
   height: 28px;
   width: 28px;
   background: #f6f6f6;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
   color: #4d4d4d;
   margin-right: 10px;
   -webkit-box-pack: center;
@@ -7739,5 +7762,38 @@ a {
   @media screen and (max-width: 992px) {
     .footer__link_titl {
       width: 50%; } }
+
+.scrollup {
+  position: fixed;
+  /* фиксированная позиция */
+  color: #fff;
+  /* цвет текста */
+  background: #4d4d4d;
+  right: 40px;
+  /* расстояние от правого края */
+  bottom: 50px;
+  /* расстояние от нижнего края */
+  padding: 4px 10px;
+  /* отступы до содержимого блока */
+  font-size: 20px;
+  /* размер шрифта (иконки) */
+  border-radius: 4px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  /* форма курсора */
+  opacity: 0.3;
+  display: none;
+  /* не отображать элемент */
+  text-align: center;
+  /*выравнивание содержимого элемента по центру */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .scrollup:hover {
+    opacity: 1; }
+  @media screen and (max-width: 480px) {
+    .scrollup {
+      right: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
